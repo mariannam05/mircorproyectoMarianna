@@ -23,6 +23,7 @@
     </nav>
     
     <div class="main">
+        <!-- parte hero -->
         <p class="tittle" id="hero">Hero:</a>
         <p class="letras experiences">❀Aqui presento algunas foto mias, que me gustan o que simplemente me parecen bonitas❀</p>
         <div class="slider" id="slider">
@@ -34,7 +35,7 @@
           <i class="fa fa-angle-left prev" id="prev"><</i> 
         </div>
         
-        
+        <!-- parte experience -->
         <br>
         <p class="tittle" id="experience">Experience</p>
         <div class="post">
@@ -43,7 +44,7 @@
                     <p class="letras a">1- Instagram fake</p>
                     <p class="letras experiences">Hecho con HTML, CSS y JavaScript</p>
                     <p class="letras experiences">CREADA EL 13 DE OCTUBRE DEL 2021 </p>
-                    <a href="https://mariannam05.github.io/Instagram1/" class="letras experiences">Link al sitio web</a>
+                    <a href="https://mariannam05.github.io/Instagram1/" target="_blank" class="letras experiences">Link al sitio web</a>
                 </div>
                 <div class="imagen">
                     <img src="img/Captura.PNG" class="post-image" alt="">
@@ -56,7 +57,7 @@
                 <p class="letras a">2- ScapeRoom Unimet</p>
                 <p class="letras experiences">Hecho con Python</p>
                 <p class="letras experiences">CREADA EL 5 DE abril DEL 2021 </p>
-                <a href="https://github.com/mariannam05/proyecto.git" class="letras experiences">Link al repositorio</a>
+                <a href="https://github.com/mariannam05/proyecto.git" target="_blank" class="letras experiences">Link al repositorio</a>
             </div>
             <div class="imagen">
                 <img src="img/scape.jpg" class="post-image" alt="">
@@ -69,13 +70,13 @@
             <p class="letras a">3- Instagram fake</p>
             <p class="letras experiences">Hecho con HTML, CSS y JavaScript</p>
             <p class="letras experiences">CREADA EL 13 DE OCTUBRE DEL 2021 </p>
-            <a href="https://mariannam05.github.io/Instagram1/" class="letras experiences">Link al sitio web</a>
+            <a href="https://mariannam05.github.io/Instagram1/"  target="_blank" class="letras experiences">Link al sitio web</a>
         </div>
         <div class="imagen">
             <img src="img/Captura.PNG" class="post-image" alt="">
         </div>
 
-        
+        <!-- parte about me -->
         <br>
         <p class="tittle" id="about-me">About me</p>
         
@@ -105,11 +106,37 @@
             </aside>
         </div>
         
+        <!-- parte skills -->
+        <br>
+        <p class="tittle" id="skills">Skills</p>
+        
 
-      <p class="tittle" id="skills">Skills</p>
-            
-      <p class="tittle" id="contact-me">Contact me</p>
-</div>
+        <!-- parte contact-me -->
+        <br>
+        <p class="tittle" id="contact-me">Contact me</p>
+        <h3 class="letras">Para comunicarte conmigo rellena el siguiente formulario:</h3>
+        
+        
+        <form action="" class="formulario" id="form">
+            <input type="text" id="name" class="formulario_input" name="nombre">
+            <label for="" class="formulario_label">Nombre</label>
+            <input type="correo" id="email" class="formulario_input" name="correo">
+            <label for="" class="formulario_label">Correo</label>
+            <input type="text" id="coment" class="formulario_input" name="coment">
+            <label for="" class="formulario_label">Mensaje</label>
+            <button type="submit" class="formulario_submit" name="form-enviar">ENVIAR</button>
+            <!-- <input type="submit" class="formulario_submit"> -->
+            <p class="warnings" id="warnings"></p>
+        </form>
+
+        <from class="cuadro">
+            <a href="https://wa.me/04148724257" target="_blank" class="letras experiences">Link a mi Whatsapp</a>
+            <a href="https://www.instagram.com/mar_imc/" target="_blank" class="letras experiences">Link a mi perfil de Instagram</a>
+            <p class="letras experiences">correo: mariannamelendez0504@gmail.com</p>
+        </from>
+
+
+    </div>
 
 <script src="main.js"></script>
 </body>
