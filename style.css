@@ -86,8 +86,10 @@ body{
     justify-content:center;
     align-items: center;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: turquoise;
     padding: 0 40px;
+    margin-bottom: 3px;
+    margin-top: 15px;
 }
 
 .slider{
@@ -112,7 +114,7 @@ body{
   opacity:1;
 }
 .slider .slides:nth-child(1){
-  background-image: url(img/yo.jpg);
+  background-image: url(img/yo2.jpg);
   background-size:cover;
   background-attachment:fixed;
   background-position:center;
@@ -142,21 +144,14 @@ body{
     background-repeat:no-repeat;
 }
 
-.slider .slides:nth-child(5){
-    background-image: url(img/yo2.jpg);
-    background-size:cover;
-    background-attachment:fixed;
-    background-position:center;
-    background-repeat:no-repeat;
-}
 
 .prev{
   position:absolute;
-  color:#fff;
+  color:rgb(0, 0, 0);
   top:50%;
   left:5%;
   z-index:99;
-  font-size:1.5em;
+  font-size:5em;
   font-weight:600;
   padding:10px 17px;
   display:flex;
@@ -167,11 +162,11 @@ body{
 
 .next{
   position:absolute;
-  color:#fff;
+  color:rgb(0, 0, 0);
   top:50%;
   right:5%;
   z-index:99;
-  font-size:1.5em;
+  font-size:5em;
   font-weight:600;
   padding:10px 17px;
   display:flex;
@@ -185,5 +180,37 @@ body{
     align-items: center;
     font-size: 18px;
     font-family:monospace;
+    justify-content:center;
+    align-items: center;
+    display: flex;
+    
 }
 
+.post-content{
+    clear: both;
+}
+.a{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+.post-image{
+    width: 50em;
+    height: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 0.5em;
+    border-color: turquoise;
+}
+.experiences{
+    font-weight: initial;
+    font-size: 1.5em;
+    font-style: initial;
+}
+
+.post{
+    padding: auto;
+    height: auto;
+    background-color: rgb(255, 221, 255);
+}
