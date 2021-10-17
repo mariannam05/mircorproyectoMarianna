@@ -28,6 +28,7 @@ body{
     display: flex;
     justify-content: center;
     padding: 5px 0;
+    z-index: 100;
 }
 
 .nav-wrapper{
@@ -54,9 +55,12 @@ body{
     cursor: pointer;
     margin: 0 10px;
     display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .items{
+    padding-right: 1em;
     padding-left: 0pt;
     max-width: 1000px;
     justify-content: flex-end;
@@ -64,3 +68,122 @@ body{
     cursor: pointer;
     margin: 0 10px;
 }
+
+
+.main{
+    width: 100%;
+    padding: 40px 0;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: rgb(255, 221, 255);
+}
+
+.tittle{
+    background-color: rgb(255, 221, 255);
+    font-size: 30px;
+    width: 100%;
+    display: inline-flex;
+    justify-content:center;
+    align-items: center;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    padding: 0 40px;
+}
+
+.slider{
+    position:relative;
+    height:100vh;
+    width:100%;
+}
+.slider .slides{
+    position:absolute;
+    height:100%;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+   opacity:0;
+   transition:0.3s ease-in-out;
+}
+.slider .slides.current{
+  z-index:1;
+  opacity:1;
+}
+.slider .slides:nth-child(1){
+  background-image: url(img/yo.jpg);
+  background-size:cover;
+  background-attachment:fixed;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+.slider .slides:nth-child(2){
+  background-image: url(img/copper.jpg);
+  background-size:cover;
+  background-attachment:fixed;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+.slider .slides:nth-child(3){
+  background-image: url(img/italia.jpg);
+  background-size:cover;
+  background-attachment:fixed;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+.slider .slides:nth-child(4){
+    background-image: url(img/paris.jpg);
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.slider .slides:nth-child(5){
+    background-image: url(img/yo2.jpg);
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.prev{
+  position:absolute;
+  color:#fff;
+  top:50%;
+  left:5%;
+  z-index:99;
+  font-size:1.5em;
+  font-weight:600;
+  padding:10px 17px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+}
+
+.next{
+  position:absolute;
+  color:#fff;
+  top:50%;
+  right:5%;
+  z-index:99;
+  font-size:1.5em;
+  font-weight:600;
+  padding:10px 17px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+}
+
+.letras{
+    margin: 5px;
+    align-items: center;
+    font-size: 18px;
+    font-family:monospace;
+}
+
