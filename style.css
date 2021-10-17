@@ -201,7 +201,7 @@ body{
     display: block;
     margin: auto;
     border-radius: 0.5em;
-    border-color: turquoise;
+    border-color: turquoise 2px;
 }
 .experiences{
     font-weight: initial;
@@ -213,4 +213,21 @@ body{
     padding: auto;
     height: auto;
     background-color: rgb(255, 221, 255);
+}
+
+.fotitomia{
+    float: left;
+    width: 20em;
+    height: 100%;
+    margin-right: 15px;
+    border-radius: 1em;
+}
+
+.cuadro-texto{
+    width: 50%;
+    margin: 20px auto;
+    background-color: rgb(61, 179, 248);
+    border-radius: 1em;
+    color: #fff;
+    padding: 15px;
 }
