@@ -98,3 +98,37 @@ form.addEventListener("submit", e=>{
     
 })
 
+
+const section  = document.getElementById('skills-section');
+const progressBar = document.querySelectorAll('.progress-bar');
+
+function mostrarProgreso(){
+    progressBar.forEach(p =>{
+        const value = p.dataset.progreso;
+        console.log(value);
+        p.style.opacity = 1;
+        p.style.width = `${value}%`;
+    });
+}
+
+function ocultarProgeso(){
+    progressBar.forEach(p =>{
+        const value  = p.dataset.progreso;
+        p.style.opacity = 0;
+        p.style.width = 0;
+    });
+}
+
+window.addEventListener('scroll', () => {
+    const sectionPos = section.getBoundingClientRect().top;
+    const screenPos = window.innerHeight / 2;
+
+    if(sectionPos < screenPos){
+        console.log("hola");
+        mostrarProgreso();
+        
+    }else{
+        console.log("adios");
+        ocultarProgeso();
+    }
+});
