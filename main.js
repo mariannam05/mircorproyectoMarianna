@@ -84,7 +84,7 @@ form.addEventListener("submit", e=>{
         warnings += 'El correo no es válido <br>'
         entrar = true
     }
-    if(comentario.value.length <2){
+    if(comentario.value = ""){
         warnings += 'El comentario no es válido <br>'
         entrar = true
     }
