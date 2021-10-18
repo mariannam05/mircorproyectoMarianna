@@ -99,19 +99,28 @@ form.addEventListener("submit", e=>{
 })
 
 
-const section  = document.getElementById('skills-section');
-const progressBar = document.querySelectorAll('.progress-bar');
 
-function mostrarProgreso(){
+const array = [{skill : "Javascript", progreso: "60"},{skill : "CSS", progreso: "70"},{skill : "HTML", progreso: "90"},{skill : "Dormir", progreso: "100"},{skill : "Jugar", progreso: "90"},{skill : "Python", progreso: "85"},{skill : "Cocinar", progreso: "75"}]
+const vari = document.getElementById("sectionid");
+
+array.forEach(p =>{
+    vari.innerHTML +=`<p class="skills-name">${p.skill}</p>
+    <div class="progress">
+        <div class="progress-bar" data-progreso = "${p.progreso}">
+            <span>${p.progreso}</span>
+        </div>
+    </div>`
+})
+
+function mostrarProgreso(progressBar){
     progressBar.forEach(p =>{
         const value = p.dataset.progreso;
-        console.log(value);
         p.style.opacity = 1;
         p.style.width = `${value}%`;
     });
 }
 
-function ocultarProgeso(){
+function ocultarProgeso(progressBar){
     progressBar.forEach(p =>{
         const value  = p.dataset.progreso;
         p.style.opacity = 0;
@@ -120,15 +129,15 @@ function ocultarProgeso(){
 }
 
 window.addEventListener('scroll', () => {
+    const section  = document.getElementById('skills-section');
+    const progressBar = document.querySelectorAll('.progress-bar');
     const sectionPos = section.getBoundingClientRect().top;
     const screenPos = window.innerHeight / 2;
 
     if(sectionPos < screenPos){
-        console.log("hola");
         mostrarProgreso();
         
     }else{
-        console.log("adios");
         ocultarProgeso();
     }
 });
